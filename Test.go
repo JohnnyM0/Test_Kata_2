@@ -124,7 +124,6 @@ func calculator(text string) (string, error) {
 				return "", fmt.Errorf("неверный формат ввода: первая часть должна быть строкой в кавычках")
 			}
 		}
-		return "", fmt.Errorf("неизвестный оператор")
 	}
 	return "", fmt.Errorf("отсутствует оператор")
 }

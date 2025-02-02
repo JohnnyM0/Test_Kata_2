@@ -36,7 +36,6 @@ func calculator(text string) (string, error) {
 			part := strings.Split(text, "+")
 			for i, _ := range part {
 				part[i] = strings.TrimSpace(part[i])
-				fmt.Println(part[i])
 			}
 			//Проверка что обе части в кавычках
 			if isQuotedString(part[0]) && isQuotedString(part[1]) {

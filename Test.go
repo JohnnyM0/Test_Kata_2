@@ -8,7 +8,6 @@ import (
 	"strings"
 )
 
-var text string
 var result string
 
 func main() {

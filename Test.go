@@ -31,7 +31,7 @@ func calculator(text string) (string, error) {
 	//Проверка условия что есть арифметический знак
 	if strings.ContainsAny(text, "+-*/") {
 		// Обработка сложения
-		if strings.ContainsAny(text, "+") {
+		if strings.Contains(text, "+") {
 			part := strings.Split(text, "+")
 			for i, _ := range part {
 				part[i] = strings.TrimSpace(part[i])
@@ -52,7 +52,7 @@ func calculator(text string) (string, error) {
 			}
 		}
 		// Обработка вычитания
-		if strings.ContainsAny(text, "-") {
+		if strings.Contains(text, "-") {
 			part := strings.Split(text, "-")
 			for i, _ := range part {
 				part[i] = strings.TrimSpace(part[i])
@@ -77,7 +77,7 @@ func calculator(text string) (string, error) {
 			}
 		}
 		//Обработка умножения
-		if strings.ContainsAny(text, "*") {
+		if strings.Contains(text, "*") {
 			part := strings.Split(text, "*")
 			for i, _ := range part {
 				part[i] = strings.TrimSpace(part[i])

@@ -77,7 +77,7 @@ func calculator(text string) (string, error) {
 		}
 		//Обработка умножения
 		if strings.Contains(text, " * ") {
-			part := strings.Split(text, " * )
+			part := strings.Split(text, " * ")
 			for i, _ := range part {
 				part[i] = strings.TrimSpace(part[i])
 			}

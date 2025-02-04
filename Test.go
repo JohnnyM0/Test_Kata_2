@@ -20,7 +20,7 @@ func main() {
 	if err != nil {
 		fmt.Println("Ошибка:", err)
 	} else if len(result) > 40 {
-		fmt.Printf("%v…\"", result[:40])
+		fmt.Printf("%v…\"", result[:41])
 	} else {
 		fmt.Println(result)
 	}
